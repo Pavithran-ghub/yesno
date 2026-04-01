@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes or No - Teddy Bear</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .teddy {
+            font-size: 80px;
+            margin-bottom: 30px;
+            animation: bounce 0.6s ease-in-out;
+        }
+
+        .teddy.animate {
+            animation: bounce 0.6s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 15px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        #yesBtn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #yesBtn:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        #noBtn {
+            background-color: #f44336;
+            color: white;
+            position: relative;
+        }
+
+        #noBtn:hover {
+            background-color: #da190b;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Do you like Teddy Bears? 🧸</h1>
+        <div class="teddy" id="teddy">🧸</div>
+        <div class="buttons">
+            <button id="yesBtn">YES</button>
+            <button id="noBtn">NO</button>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        const teddy = document.getElementById('teddy');
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const message = document.getElementById('message');
+
+        noBtn.addEventListener('mouseover', () => {
+            const randomX = Math.random() * 200 - 100;
+            const randomY = Math.random() * 200 - 100;
+            noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        });
+
+        yesBtn.addEventListener('click', () => {
+            teddy.classList.remove('animate');
+            void teddy.offsetWidth;
+            teddy.classList.add('animate');
+            message.textContent = '🎉 Yay! Teddy is happy!';
+            message.style.display = 'block';
+            message.style.color = '#4CAF50';
+        });
+
+        noBtn.addEventListener('click', () => {
+            teddy.classList.remove('animate');
+            void teddy.offsetWidth;
+            teddy.classList.add('animate');
+            message.textContent = '😢 Teddy is sad!';
+            message.style.display = 'block';
+            message.style.color = '#f44336';
+        });
+    </script>
+</body>
+</html>
