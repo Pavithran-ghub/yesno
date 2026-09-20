@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrailRoam Ridge GTX Trekking Shoes – 60% Off</title>
+<meta name="description" content="Waterproof trekking shoes with grippy lugs. Limited stock – check your size before the sale ends.">
+<meta property="og:title" content="TrailRoam Ridge GTX Trekking Shoes – 60% Off">
+<meta property="og:description" content="Waterproof trekking shoes with grippy lugs. Limited stock – check your size before the sale ends.">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f2efe8;
+    --ink: #1f2a22;
+    --muted: #5d685f;
+    --forest: #2f4a3a;
+    --forest-dark: #1d3227;
+    --trail: #e2662b;
+    --card: #fbfaf6;
+    --line: #d9d4c7;
+    --love-bg: #3a0f24;
+    --love-ink: #fff1f5;
+    --love-pink: #ff6b9a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151b17;
+      --ink: #eee9dd;
+      --muted: #a2ada4;
+      --forest: #7fae8f;
+      --forest-dark: #a9d0b7;
+      --card: #1e2620;
+      --line: #334037;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  h1, h2, .display { font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif; }
+
+  .sale-bar {
+    background: var(--trail);
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+  header.top {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 20px; border-bottom: 1px solid var(--line);
+  }
+  .logo { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.6rem; letter-spacing: 0.02em; color: var(--forest); }
+  .cart { font-weight: 600; color: var(--muted); }
+
+  main.product {
+    max-width: 1000px; margin: 0 auto; padding: 28px 20px 60px;
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 36px; align-items: start;
+  }
+  @media (max-width: 760px) { main.product { grid-template-columns: 1fr; gap: 20px; } }
+
+  .gallery {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 24px 16px 12px;
+  }
+  .gallery svg { width: 100%; height: auto; display: block; }
+  .gallery .thumbs { display: flex; gap: 8px; margin-top: 8px; justify-content: center; color: var(--muted); font-size: 0.85rem; }
+
+  h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.05; margin: 0 0 6px; font-weight: 700; }
+  .stars { color: var(--trail); font-weight: 600; }
+  .stars span { color: var(--muted); font-weight: 400; }
+  .price { display: flex; align-items: baseline; gap: 12px; margin: 14px 0 4px; }
+  .price .now { font-family: "Barlow Condensed", sans-serif; font-size: 2.4rem; font-weight: 700; }
+  .price .was { color: var(--muted); text-decoration: line-through; }
+  .price .off { background: var(--forest); color: #fff; font-size: 0.85rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; }
+  @media (prefers-color-scheme: dark) { .price .off { color: #10180f; } }
+  .countdown { color: var(--trail); font-weight: 600; margin-bottom: 18px; }
+
+  .label { font-weight: 600; margin: 18px 0 8px; }
+  .sizes { display: flex; flex-wrap: wrap; gap: 8px; }
+  .sizes button {
+    min-width: 52px; padding: 10px 0; border: 1.5px solid var(--line); background: var(--card);
+    color: var(--ink); font: inherit; font-weight: 500; border-radius: 8px; cursor: pointer;
+  }
+  .sizes button[aria-pressed="true"] { border-color: var(--forest); background: var(--forest); color: #fff; }
+  @media (prefers-color-scheme: dark) { .sizes button[aria-pressed="true"] { color: #10180f; } }
+
+  .cta {
+    display: block; width: 100%; margin-top: 22px; padding: 16px; border: 0; border-radius: 10px;
+    background: var(--trail); color: #fff; font: inherit; font-size: 1.1rem; font-weight: 600; cursor: pointer;
+  }
+  .cta.secondary { background: transparent; color: var(--forest); border: 2px solid var(--forest); margin-top: 10px; }
+  .cta:active { transform: translateY(1px); }
+  button:focus-visible { outline: 3px solid var(--trail); outline-offset: 3px; }
+
+  ul.specs { padding-left: 18px; color: var(--muted); margin: 22px 0 0; }
+  ul.specs li { margin: 4px 0; }
+
+  /* Loading */
+  .checking {
+    position: fixed; inset: 0; z-index: 10; display: none; flex-direction: column;
+    align-items: center; justify-content: center; gap: 16px;
+    background: color-mix(in srgb, var(--bg) 92%, transparent); text-align: center; padding: 20px;
+  }
+  .checking.on { display: flex; }
+  .spinner { width: 46px; height: 46px; border: 5px solid var(--line); border-top-color: var(--trail); border-radius: 50%; animation: spin 0.9s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* The reveal */
+  .love {
+    position: fixed; inset: 0; z-index: 20; display: none; overflow: hidden;
+    background: radial-gradient(ellipse at 50% 40%, #6b1841 0%, var(--love-bg) 70%);
+    color: var(--love-ink); text-align: center;
+    align-items: center; justify-content: center; flex-direction: column;
+    padding: max(24px, env(safe-area-inset-top, 0px)) 24px max(24px, env(safe-area-inset-bottom, 0px));
+  }
+  .love.on { display: flex; }
+  .love h2 {
+    position: relative; z-index: 2;
+    font-size: clamp(2.6rem, 11vw, 6rem); line-height: 1; font-weight: 700; margin: 0; max-width: 14ch;
+    overflow-wrap: anywhere; text-wrap: balance;
+  }
+  .love .name { color: var(--love-pink); }
+  .love p { position: relative; z-index: 2; margin: 22px 0 0; font-size: 1.1rem; opacity: 0.85; }
+  .love button {
+    position: relative; z-index: 2; margin-top: 28px; padding: 12px 22px; border-radius: 999px;
+    border: 2px solid var(--love-pink); background: transparent; color: var(--love-ink); font: inherit; font-weight: 600; cursor: pointer;
+  }
+  .heart { position: absolute; bottom: -40px; z-index: 1; animation: rise linear forwards; pointer-events: none; }
+  @keyframes rise { to { transform: translateY(-115vh) rotate(25deg); opacity: 0; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spinner { animation-duration: 2.5s; }
+    .heart { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sale-bar">Monsoon trail sale – extra 10% off with code TREK10</div>
+<header class="top">
+  <div class="logo">TrailRoam</div>
+  <div class="cart">Cart (0)</div>
+</header>
+
+<main class="product">
+  <section class="gallery" aria-label="Product images">
+    <svg viewBox="0 0 400 260" role="img" aria-label="Green trekking shoe with orange sole">
+      <!-- ground shadow -->
+      <ellipse cx="205" cy="240" rx="180" ry="9" fill="#000" opacity="0.12"/>
+      <!-- sole -->
+      <path d="M26 196 L388 196 L388 208 Q388 232 356 232 L58 232 Q26 232 26 208 Z" fill="#23272a"/>
+      <path d="M26 190 L388 190 L388 200 L26 200 Z" fill="#e2662b"/>
+      <!-- lugs -->
+      <g fill="#111416">
+        <rect x="46" y="222" width="18" height="10" rx="2"/><rect x="74" y="222" width="18" height="10" rx="2"/>
+        <rect x="102" y="222" width="18" height="10" rx="2"/><rect x="130" y="222" width="18" height="10" rx="2"/>
+        <rect x="158" y="222" width="18" height="10" rx="2"/><rect x="186" y="222" width="18" height="10" rx="2"/>
+        <rect x="214" y="222" width="18" height="10" rx="2"/><rect x="242" y="222" width="18" height="10" rx="2"/>
+        <rect x="270" y="222" width="18" height="10" rx="2"/><rect x="298" y="222" width="18" height="10" rx="2"/>
+        <rect x="326" y="222" width="18" height="10" rx="2"/>
+      </g>
+      <!-- upper -->
+      <path d="M44 190 L54 92 Q56 70 80 68 L146 62 Q168 60 182 80 L196 102 Q232 116 282 130 Q352 146 374 172 Q386 184 384 190 Z" fill="#2f4a3a"/>
+      <!-- heel overlay -->
+      <path d="M44 190 L50 128 Q90 140 104 190 Z" fill="#243a2d"/>
+      <!-- toe cap -->
+      <path d="M318 148 Q364 158 380 180 L384 190 L296 190 Q304 164 318 148 Z" fill="#1b2c22"/>
+      <!-- collar -->
+      <path d="M80 68 L146 62 Q168 60 182 80 L170 84 Q150 74 128 76 L84 80 Q76 78 80 68 Z" fill="#e2662b"/>
+      <!-- laces -->
+      <g stroke="#f2efe8" stroke-width="5" stroke-linecap="round">
+        <line x1="150" y1="92" x2="176" y2="106"/><line x1="172" y1="100" x2="198" y2="114"/>
+        <line x1="194" y1="108" x2="222" y2="120"/><line x1="216" y1="116" x2="246" y2="127"/>
+        <line x1="238" y1="123" x2="270" y2="134"/>
+      </g>
+      <!-- side swoosh -->
+      <path d="M96 170 Q150 140 230 154 Q190 168 96 170 Z" fill="#e2662b" opacity="0.9"/>
+      <!-- heel pull tab -->
+      <rect x="52" y="76" width="10" height="26" rx="4" fill="#e2662b"/>
+    </svg>
+    <div class="thumbs"><span>Side view</span></div>
+  </section>
+
+  <section aria-label="Product details">
+    <div class="stars">★★★★★ <span>4.8 (2,317 reviews)</span></div>
+    <h1>Ridge GTX Waterproof Trekking Shoes</h1>
+    <div class="price">
+      <span class="now">₹1,499</span>
+      <span class="was">₹3,799</span>
+      <span class="off">60% OFF</span>
+    </div>
+    <div class="countdown" id="countdown" aria-live="off">Sale ends in 00:14:59</div>
+
+    <div class="label" id="size-label">Select size (UK)</div>
+    <div class="sizes" role="group" aria-labelledby="size-label">
+      <button aria-pressed="false">6</button>
+      <button aria-pressed="false">7</button>
+      <button aria-pressed="false">8</button>
+      <button aria-pressed="false">9</button>
+      <button aria-pressed="false">10</button>
+      <button aria-pressed="false">11</button>
+    </div>
+
+    <button class="cta" id="buy">Add to cart</button>
+    <button class="cta secondary" id="stock">Check stock in your size</button>
+
+    <ul class="specs">
+      <li>Waterproof membrane, breathable mesh lining</li>
+      <li>Deep 5 mm lugs for wet rock and loose trail</li>
+      <li>Ankle support with padded collar</li>
+      <li>Free delivery, 7-day returns</li>
+    </ul>
+  </section>
+</main>
+
+<div class="checking" id="checking" role="status" aria-live="polite">
+  <div class="spinner" aria-hidden="true"></div>
+  <div class="display" style="font-size:1.6rem;">Checking stock in your size…</div>
+</div>
+
+<div class="love" id="love" role="dialog" aria-modal="true" aria-labelledby="loveText">
+  <h2 id="loveText"></h2>
+  <p>Surprise! There were never any shoes.</p>
+  <button id="again">Back to the shoes</button>
+</div>
+
+<script>
+(function () {
+  var MESSAGE_START = "Pavithran loves Priyanka mor";
+  var STRETCH = "eeeeeeeeee";
+  var END = "....";
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // size picker
+  var sizeButtons = document.querySelectorAll(".sizes button");
+  sizeButtons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      sizeButtons.forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+      b.setAttribute("aria-pressed", "true");
+    });
+  });
+
+  // fake sale countdown
+  var secs = 14 * 60 + 59;
+  var cd = document.getElementById("countdown");
+  setInterval(function () {
+    secs = secs > 0 ? secs - 1 : 14 * 60 + 59;
+    var m = String(Math.floor(secs / 60)).padStart(2, "0");
+    var s = String(secs % 60).padStart(2, "0");
+    cd.textContent = "Sale ends in 00:" + m + ":" + s;
+  }, 1000);
+
+  var checking = document.getElementById("checking");
+  var love = document.getElementById("love");
+  var loveText = document.getElementById("loveText");
+  var typeTimer = null;
+  var heartTimer = null;
+
+  function renderMessage(text) {
+    // colour the names
+    var html = text
+      .replace("Priyanka", '<span class="name">Priyanka</span>');
+    loveText.innerHTML = html;
+  }
+
+  function startHearts() {
+    if (reduceMotion) return;
+    var emojis = ["❤️", "💖", "💕", "💗"];
+    heartTimer = setInterval(function () {
+      var h = document.createElement("span");
+      h.className = "heart";
+      h.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      h.style.left = Math.random() * 100 + "vw";
+      h.style.fontSize = 18 + Math.random() * 30 + "px";
+      h.style.animationDuration = 4 + Math.random() * 4 + "s";
+      love.appendChild(h);
+      setTimeout(function () { h.remove(); }, 8500);
+    }, 220);
+  }
+
+  function reveal() {
+    checking.classList.remove("on");
+    love.classList.add("on");
+    var full = MESSAGE_START + STRETCH + END;
+    if (reduceMotion) {
+      renderMessage(full);
+    } else {
+      var i = 0;
+      typeTimer = setInterval(function () {
+        i++;
+        renderMessage(full.slice(0, i));
+        if (i >= full.length) clearInterval(typeTimer);
+      }, 70);
+    }
+    startHearts();
+    document.getElementById("again").focus();
+  }
+
+  function trigger() {
+    checking.classList.add("on");
+    setTimeout(reveal, 1600);
+  }
+
+  document.getElementById("buy").addEventListener("click", trigger);
+  document.getElementById("stock").addEventListener("click", trigger);
+
+  document.getElementById("again").addEventListener("click", function () {
+    love.classList.remove("on");
+    clearInterval(typeTimer);
+    clearInterval(heartTimer);
+    loveText.textContent = "";
+    love.querySelectorAll(".heart").forEach(function (h) { h.remove(); });
+  });
+})();
+</script>
+</body>
+</html>
